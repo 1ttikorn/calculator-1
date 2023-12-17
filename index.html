@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BMI Calculator - Calculate your Body Mass Index">
+    <meta name="keywords" content="BMI, Body Mass Index, health, fitness, weight, obesity">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.yourwebsite.com">
+
+    <!-- Open Graph tags for social media -->
+    <meta property="og:title" content="BMI Calculator">
+    <meta property="og:description" content="Calculate your Body Mass Index with our online BMI Calculator.">
+    <meta property="og:image" content="url_to_your_logo_image.jpg">
+    <meta property="og:url" content="https://www.yourwebsite.com">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BMI Calculator">
+    <meta name="twitter:description" content="Calculate your Body Mass Index with our online BMI Calculator.">
+    <meta name="twitter:image" content="url_to_your_logo_image.jpg">
+
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+
+        <!-- BMI Calculator section -->
+        <div class="calculator">
+            <label for="height">Height (cm):</label>
+            <input type="number" autofocus id="height" placeholder="Enter your height" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight" required>
+
+            <button onclick="calculateBMI()">Calculate BMI</button>
+
+            <div id="result"></div>
+        </div>
+
+        <p>
+            BMI stands for Body Mass Index. It is a numerical value of a person's weight in relation to their height. BMI is a widely used screening tool to categorize individuals into different weight status categories, such as underweight, normal weight, overweight, and obesity.
+        </p>
+
+        <p>
+            The formula for calculating BMI is as follows:
+            <br>
+            BMI = <span id="formula">weight (kg) / (height (m))^2</span>
+        </p>
+
+        <p>
+            The units for weight can be either kilograms or pounds, and the units for height can be either meters or inches. However, it's common to use the metric system (kilograms and meters) for BMI calculations.
+        </p>
+
+        <p>
+            The World Health Organization (WHO) provides the following BMI categories:
+        </p>
+
+        <ul>
+            <li>Underweight: BMI less than 18.5</li>
+            <li>Normal weight: BMI 18.5 to 24.9</li>
+            <li>Overweight: BMI 25 to 29.9</li>
+            <li>Obesity:
+                <ul>
+                    <li>Class 1 (Moderate): BMI 30 to 34.9</li>
+                    <li>Class 2 (Severe): BMI 35 to 39.9</li>
+                    <li>Class 3 (Very severe or morbid obesity): BMI 40 or greater</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>
+            It's important to note that while BMI is a useful screening tool, it does not directly measure body fat percentage, and individual health risks can vary. Other factors, such as muscle mass and distribution of fat, should also be considered when assessing an individual's health. It's recommended to consult with a healthcare professional for a more comprehensive evaluation of health and fitness.
+        </p>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 Your Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
